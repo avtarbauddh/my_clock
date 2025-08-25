@@ -21,6 +21,7 @@ Currently, I’m also on my **DSA journey** and decided to learn **Git & GitHub*
 Here is one of my mini web development project, "Niddble clock".
 
 - This clock use Javascript to show acutal time in live time.
+- This used html, css , javascript
 
 
 ✨ This is just the beginning of my GitHub journey! More projects coming soon...    
