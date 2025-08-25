@@ -1,11 +1,19 @@
 # my_first_repo
-This is my first git repository.
+# 🚀 My First GitHub Repository
 
-Hii 👋🏻,
-I'm Avtar
-I'have learned C++/python/htnl/css/Javascript till now.
-And finally along my DSA journey , i also decided to learn Git & Github.
+Hi 👋🏻, I'm **Avtar**  
 
+I've learned:
+- 🌱 C++  
+- 🐍 Python  
+- 🎨 HTML / CSS  
+- ⚡ JavaScript  
 
-Today , 25/08/2025 ,
-I started to learn Git & Github. 
+Currently, I’m also on my **DSA journey** and decided to learn **Git & GitHub** along the way.
+
+📅 **Started Git & GitHub on:** *25/08/2025*  
+
+---
+
+✨ This is just the beginning of my GitHub journey! More projects coming soon...
+
