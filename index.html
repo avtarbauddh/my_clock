@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Needle Clock</title>
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <h2>My Clock</h2>
+    <button id="btn"> Switch to Dark Mode</button>
+    <div class="clock" id="clock">
+      <div class="hand" id="hour"><i class="hour" id="hourl" style="height: 90px;"></i></div>
+      <div class="hand" id="minute"><i class="minute" style="background-color: blue;height:105px"></i></div>
+      <div class="hand" id="second"><i class="second" style="background-color: red;height: 130px;"></i></div>
+    <!-- Second Ticks -->
+  <!-- We'll add 60 ticks using CSS custom property --i -->
+  <!-- Use HTML or JavaScript loop — here's manual HTML for simplicity -->
+  <!-- You can repeat this 60 times with --i from 1 to 60 -->
+  <!-- I’ll paste a full loop here for you -->
+
+  <!-- Copy-paste this block into your .clock div: -->
+  <!-- Tick marks: -->
+        <div id="tick">
+            <div class="tick" style="--i:1"></div>
+            <div class="tick" style="--i:2"></div>
+            <div class="tick" style="--i:3"></div>
+            <div class="tick" style="--i:4"></div>
+            <div class="tick" style="--i:5"></div>
+            <div class="tick" style="--i:6"></div>
+            <div class="tick" style="--i:7"></div>
+            <div class="tick" style="--i:8"></div>
+            <div class="tick" style="--i:9"></div>
+            <div class="tick" style="--i:10"></div>
+            <div class="tick" style="--i:11"></div>
+            <div class="tick" style="--i:12"></div>
+            <div class="tick" style="--i:13"></div>
+            <div class="tick" style="--i:14"></div>
+            <div class="tick" style="--i:15"></div>
+            <div class="tick" style="--i:16"></div>
+            <div class="tick" style="--i:17"></div>
+            <div class="tick" style="--i:18"></div>
+            <div class="tick" style="--i:19"></div>
+            <div class="tick" style="--i:20"></div>
+            <div class="tick" style="--i:21"></div>
+            <div class="tick" style="--i:22"></div>
+            <div class="tick" style="--i:23"></div>
+            <div class="tick" style="--i:24"></div>
+            <div class="tick" style="--i:25"></div>
+            <div class="tick" style="--i:26"></div>
+            <div class="tick" style="--i:27"></div>
+            <div class="tick" style="--i:28"></div>
+            <div class="tick" style="--i:29"></div>
+            <div class="tick" style="--i:30"></div>
+            <div class="tick" style="--i:31"></div>
+            <div class="tick" style="--i:32"></div>
+            <div class="tick" style="--i:33"></div>
+            <div class="tick" style="--i:34"></div>
+            <div class="tick" style="--i:35"></div>
+            <div class="tick" style="--i:36"></div>
+            <div class="tick" style="--i:37"></div>
+            <div class="tick" style="--i:38"></div>
+            <div class="tick" style="--i:39"></div>
+            <div class="tick" style="--i:40"></div>
+            <div class="tick" style="--i:41"></div>
+            <div class="tick" style="--i:42"></div>
+            <div class="tick" style="--i:43"></div>
+            <div class="tick" style="--i:44"></div>
+            <div class="tick" style="--i:45"></div>
+            <div class="tick" style="--i:46"></div>
+            <div class="tick" style="--i:47"></div>
+            <div class="tick" style="--i:48"></div>
+            <div class="tick" style="--i:49"></div>
+            <div class="tick" style="--i:50"></div>
+            <div class="tick" style="--i:51"></div>
+            <div class="tick" style="--i:52"></div>
+            <div class="tick" style="--i:53"></div>
+            <div class="tick" style="--i:54"></div>
+            <div class="tick" style="--i:55"></div>
+            <div class="tick" style="--i:56"></div>
+            <div class="tick" style="--i:57"></div>
+            <div class="tick" style="--i:58"></div>
+            <div class="tick" style="--i:59"></div>
+            <div class="tick" style="--i:60"></div>
+        
+        </div>
+    
+    
+
+    <!-- Numbers around the clock -->
+    <div class="number" style="--i:1">1</div>
+    <div class="number" style="--i:2">2</div>
+    <div class="number" style="--i:3">3</div>
+    <div class="number" style="--i:4">4</div>
+    <div class="number" style="--i:5">5</div>
+    <div class="number" style="--i:6">6</div>
+    <div class="number" style="--i:7">7</div>
+    <div class="number" style="--i:8">8</div>
+    <div class="number" style="--i:9">9</div>
+    <div class="number" style="--i:10">10</div>
+    <div class="number" style="--i:11">11</div>
+    <div class="number" style="--i:12">12</div>
+  </div>
+
+  <br><br>
+  <h3 style="position: fixed;bottom: 10px;right: 10px;"><b>Project : 13. (Avtar bauddh)</b></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>

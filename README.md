@@ -13,7 +13,7 @@ Currently, I’m also on my **DSA journey** and decided to learn **Git & GitHub*
 
 📅 **Started Git & GitHub on:** *25/08/2025*  
 
----
+-----
 
-✨ This is just the beginning of my GitHub journey! More projects coming soon...
-
+✨ This is just the beginning of my GitHub journey! More projects coming soon...    
+                                       
