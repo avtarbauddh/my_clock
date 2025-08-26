@@ -1,235 +1,234 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 600px;
-  background-color: #16efd2;
-  transition: 0.6s;
-  
-}
-
-body.light{
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #16efd2;
     transition: 0.6s;
-    background: black;
-}
+    
+    }
 
-h2{
-    position: fixed;
-    top: 10px;
-    background-color: #01ac54;
-    width: 300px;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 50px;
-    box-shadow: 10px 8px 7px rgb(1, 67, 20);
+    body.light{
+        transition: 0.6s;
+        background: black;
+    }
+
+    h2{
+        position: relative;
+        top: -300px;
+        background-color: #01ac54;
+        width: 300px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 10px 8px 7px rgb(1, 67, 20);
+        text-align: center;
+        border: 2px solid rgb(79, 75, 75);
+        cursor: pointer;
+        
+    }
+    h2:hover{
+        transform: scale(1.05);
+        transition: 0.6s;
+    }
+    .h2-light{
+        background-color: rgb(246, 30, 220);
+        box-shadow: none;
+        -webkit-box-reflect:below -5px linear-gradient(to bottom , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.13)); 
+        animation: anime2 10s linear infinite;
+
+    }
+    .h3-light{
+        color: white;
+    }
+
+
+    .clock {
+        position: fixed;
+        width: 300px;
+        height: 300px;
+        border: 8px solid #333;
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 10px 9px 10px rgb(0, 0, 0);
+    }
+
+    .clock-light{
+        border: 8px solid rgb(2, 216, 70);
+        animation: anime 10s linear infinite;
+        background: transparent;
+        -webkit-box-reflect: below 5px linear-gradient(to bottom , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.13));    
+    }
+
+    .clock::before{
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        border-radius: 50px;
+        background-color:rgb(255, 0, 0);
+    }
+
+    .number {
+    position: absolute;
     text-align: center;
-    border: 2px solid rgb(79, 75, 75);
-    cursor: pointer;
-    
-}
-h2:hover{
-    transform: scale(1.05);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
     transition: 0.6s;
-}
-.h2-light{
-    background-color: rgb(246, 30, 220);
-    box-shadow: none;
-    -webkit-box-reflect:below -5px linear-gradient(to bottom , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.13)); 
-    animation: anime2 10s linear infinite;
+    top: 45%;
+    left: 45%;
+    z-index: 1000; 
+    transform: rotate(calc(30deg * var(--i) - 90deg)) translate(130px) rotate(calc(-30deg * var(--i) + 90deg));
+    }
 
-}
-.h3-light{
-    color: white;
-}
-
-
-.clock {
-    position: fixed;
-    width: 300px;
-    height: 300px;
-    border: 8px solid #333;
-    border-radius: 50%;
-    background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 9px 10px rgb(0, 0, 0);
-}
-
-.clock-light{
-    border: 8px solid rgb(2, 216, 70);
-    animation: anime 10s linear infinite;
-    background: transparent;
-    -webkit-box-reflect: below 5px linear-gradient(to bottom , rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.13));    
-}
-
-.clock::before{
-    content: '';
+    .numlight{
     position: absolute;
-    width: 8px;
-    height: 8px;
-    border-radius: 50px;
-    background-color:rgb(255, 0, 0);
-}
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.6s;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    top: 45%;
+    left: 45%;
+    z-index: 1000;
+    transform: rotate(calc(30deg * var(--i) - 90deg)) translate(130px) rotate(calc(-30deg * var(--i) + 90deg));
+    }
+    .hand{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
 
-.number {
-  position: absolute;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #333;
-  transition: 0.6s;
-  top: 45%;
-  left: 45%;
-  z-index: 1000;
-transform: rotate(calc(30deg * var(--i) - 90deg)) translate(130px) rotate(calc(-30deg * var(--i) + 90deg));
-}
-
-.numlight{
-  position: absolute;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  transition: 0.6s;
-  text-align: center;
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #fff;
-  top: 45%;
-  left: 45%;
-  z-index: 1000;
-transform: rotate(calc(30deg * var(--i) - 90deg)) translate(130px) rotate(calc(-30deg * var(--i) + 90deg));
-}
-.hand{
+    .hand i{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.hand i{
-  position: absolute;
-  width: 4px;
-  height: 70px;
-  background: #000;
-  transform-origin: left;
-  transition: all 0.05s ease-in-out;
-}
-
-.hand i.light-hour{
-    background: #fff;
-}
-#tick{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tick {
-  position: absolute;
-  width: 2px;
-  height: 6px;
-  background: #555;
-  transform: rotate(calc(6deg * var(--i))) translate(143px) rotate(calc(0deg * var(--i) + 90deg));  transform-origin: center;
-}
-.tick-light{
-  position: absolute;
-  width: 2px;
-  height: 6px;
-  background: white;
-  transform: rotate(calc(6deg * var(--i))) translate(143px) rotate(calc(0deg * var(--i) + 90deg));  transform-origin: center;
-}
-
-/* Optional: make every 5th tick longer (like hand marks) */
-.tick:nth-child(5n) {
+    width: 4px;
+    height: 70px;
     background: #000;
-    height: 13px;
-}
-.tick-light:nth-child(5n){
-    height: 13px;
-    background: rgb(0, 224, 86);
-}
-
-
-button{
-    position: fixed;
-    padding: 5px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    top: 10px;
-    background-color: #616060;
-    right: 20px;
-    box-shadow: 14px 10px 17px rgb(0, 0, 0);
-    border-radius: 10px;
-    transition: 0.4s;
-}
-
-button:hover{
-    background: #00891e;
-    scale: 1.1;
-}
-
-
-
-
-@keyframes anime{
-    0%{
-        border-color : hsl(0, 100%, 50%);
-    } 
-    20%{
-        border-color : hsl(288, 99%, 70%);
+    transform-origin: left;
+    transition: all 0.05s ease-in-out;
     }
-    40%{
-        border-color : hsl(195, 100%, 69%);
+
+    .hand i.light-hour{
+        background: #fff;
     }
-    
-    60%{
-        border-color : hsl(147, 94%, 54%);
+    #tick{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    80%{
-        border-color : hsl(195, 100%, 69%);
-    }  
-    90%{
-        border-color : hsl(296, 97%, 60%);
-    } 
-    100%{
-        border-color : hsl(0, 100%, 50%);
-    } 
-} 
-@keyframes anime2{
-    0%{
-        background : hsl(0, 100%, 50%);
-    } 
-    20%{
-        background : hsl(288, 99%, 70%);
+
+    .tick {
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    background: #555;
+    transform: rotate(calc(6deg * var(--i))) translate(143px) rotate(calc(0deg * var(--i) + 90deg));  transform-origin: center;
     }
-    40%{
-        background : hsl(195, 100%, 69%);
+    .tick-light{
+    position: absolute;
+    width: 2px;
+    height: 6px;
+    background: white;
+    transform: rotate(calc(6deg * var(--i))) translate(143px) rotate(calc(0deg * var(--i) + 90deg));  transform-origin: center;
     }
-    
-    60%{
-        background : hsl(147, 94%, 54%);
+
+    /* Optional: make every 5th tick longer (like hand marks) */
+    .tick:nth-child(5n) {
+        background: #000;
+        height: 13px;
     }
-    80%{
-        background : hsl(195, 100%, 69%);
-    }  
-    90%{
-        background : hsl(296, 97%, 60%);
+    .tick-light:nth-child(5n){
+        height: 13px;
+        background: rgb(0, 224, 86);
+    }
+
+
+    button{
+        position: fixed;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        top: 10px;
+        background-color: #616060;
+        right: 20px;
+        box-shadow: 14px 10px 17px rgb(0, 0, 0);
+        border-radius: 10px;
+        transition: 0.4s;
+    }
+
+    button:hover{
+        background: #00891e;
+        scale: 1.1;
+    }
+
+
+
+
+    @keyframes anime{
+        0%{
+            border-color : hsl(0, 100%, 50%);
+        } 
+        20%{
+            border-color : hsl(288, 99%, 70%);
+        }
+        40%{
+            border-color : hsl(195, 100%, 69%);
+        }
+        
+        60%{
+            border-color : hsl(147, 94%, 54%);
+        }
+        80%{
+            border-color : hsl(195, 100%, 69%);
+        }  
+        90%{
+            border-color : hsl(296, 97%, 60%);
+        } 
+        100%{
+            border-color : hsl(0, 100%, 50%);
+        } 
     } 
-    100%{
-        background : hsl(0, 100%, 50%);
+    @keyframes anime2{
+        0%{
+            background : hsl(0, 100%, 50%);
+        } 
+        20%{
+            background : hsl(288, 99%, 70%);
+        }
+        40%{
+            background : hsl(195, 100%, 69%);
+        }
+        
+        60%{
+            background : hsl(147, 94%, 54%);
+        }
+        80%{
+            background : hsl(195, 100%, 69%);
+        }  
+        90%{
+            background : hsl(296, 97%, 60%);
+        } 
+        100%{
+            background : hsl(0, 100%, 50%);
+        } 
     } 
-} 
