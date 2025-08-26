@@ -51,10 +51,10 @@ btn.addEventListener("click",function(){
     tick.forEach((ti)=>{
         ti.classList.toggle("tick-light");
     })
-    if (btn.textContent === "Switch to Light Mode") {
-        btn.textContent = "Switch to Dark Mode";
+    if (btn.textContent === "Light Mode") {
+        btn.textContent = "Dark Mode";
     } else {
-        btn.textContent = "Switch to Light Mode";
+        btn.textContent = "Light Mode";
     }
 
 
